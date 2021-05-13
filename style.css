@@ -381,7 +381,7 @@ padding-left: 7em;
         flex-direction: column;
     }
     .text{
-        margin-top: 100px;
+        margin-top: 80px;
         padding: 20px;
     }
     .text h1{
@@ -632,5 +632,10 @@ padding-left: 7em;
     .link h5{
         font-size: 1.1em;
     }
+    .text p{
+    font-size: 1.3em;
+    margin-bottom: 30px;
+   line-height: 25px;
+}
      
 }
