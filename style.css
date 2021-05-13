@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}*/
+
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+   max-width: 100%; 
+    overflow-x: hidden;
+}
+.landing{
+    height: 100vh;
+    background: rgb(5, 0, 0);
+}
+.main{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+ height: 8vh;
+ padding: 10px;
+}
+.logo{
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 2rem;
+}
+.logo h4{
+    
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.navbar ul{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .navbar li{
+     list-style: none;
+     padding: 5px;
+ }
+ .navbar li a{
+     color:aliceblue;
+     text-decoration: none;
+     text-transform: capitalize;
+     margin: 15px;
+     font-size: 1.5em;
+    
+ }
+ .navbar li a:hover{
+ letter-spacing: 2px ;
+ }
+ 
+.toggle{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.bar{
+    width: 100%;
+    background: whitesmoke;
+    height: 3px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.text{
+    text-align: center;
+    margin: 4.5em 3em 1em 3em;
+    color: aliceblue;
+    line-height: 10px;
+}
+.text h4{
+    font-size: 1.2rem;
+    width: 300;
+    text-transform: capitalize;
+    margin: 10px;
+}
+.text h1{
+    font-size: 5em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: .5em;
+}
+.text h1 span{
+    -webkit-text-stroke-width: 1px;
+    transform: translateY(-35%);
+    margin-left: 2em;
+    display: flex;
+    margin-top: 1em;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+}
+
+.text h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    
+}
+.text p{
+    font-size: 1.3em;
+    margin-bottom: 50px;
+   line-height: 25px;
+}
+.text a{
+    background: rgb(23, 133, 184);
+    color: rgb(5, 0, 0);
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    border-radius: 30px;
+}
+.text a:hover{
+    letter-spacing: 2px;
+}
+.myimg img{
+    width: 400px;
+    margin: 25px;
+    border-radius: 400px;
+    
+}
+
+.project h4{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #000;
+    text-align: center;
+    padding: 1em;
+}
+.task,.task1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3em;
+}
+.task img, .task1 img{
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+}
+.task1{
+    flex-direction: row-reverse;
+}
+.tasktex,.tasktex1{
+    margin-top: 5em;
+    padding: 2em;
+}
+.tasktex h2 span{
+    font-size: 2em;
+    color: rgb(23, 133, 184);
+    position: relative;
+    right: 1.5em;
+    
+   
+}
+.tasktex1 h2{ 
+    color: #000;
+    font-size: 1.5em;
+   text-transform: uppercase;
+   position: relative;
+   left: 7em;
+   line-height: 40px;
+}
+.tasktex a{
+   text-transform: uppercase;
+   margin-top: 2em;
+   font-size: 1em;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    left: 4em;
+    cursor: pointer;
+}
+.tasktex i,.tasktex1 i{
+    width: 3.5em;
+    background-color: rgb(23, 133, 184);
+    height: 2.5px;
+    display: flex;
+    position: relative;
+    top: .6em;
+
+}
+.tasktex1 i{
+    left: 6.5em;
+}
+.tasktex1 a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #000;
+    margin-top: 1em;
+    position: relative;
+    left:10.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.tasktex1 h2 span{
+    font-size: 2em;
+    color: rgb(23, 133, 184);
+    position: relative;
+    right: 1.5em;
+    margin-bottom: 2em;
+    
+   
+}
+.tasktex h2{ 
+    color: #000;
+    font-size: 1.5em;
+  line-height: 40px;
+    text-transform: uppercase;
+   
+}
+.user{
+    background: rgb(23, 133, 184);
+    padding-bottom: 3em ;
+    padding-top: 1em;
+}
+.user h4{
+    padding: 1em 2em;
+    width: 600px;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.user a{
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-left:6em;
+
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.skill{
+ display: flex;
+ justify-content: space-around;
+}
+.work h5{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.work li{
+    list-style:outside;
+    padding-bottom: .7em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.map{
+    margin-right: 1em;
+}
+.contactt{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contact h3{
+    color: #000;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form h4{
+    color: rgb(23, 133, 184);
+    font-size: 1.7em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form{
+    margin: 1em;
+    height: 500px;
+    width: 400;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, 
+               -14px -14px 20px white;
+
+}
+.form button{
+    background: rgb(23, 133, 184);
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin-left: 8em;
+    border-radius: 20px;
+
+}
+.form input,.form textarea{
+    width: 40vw;
+    margin: 1.2em;
+    padding: .7em;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.form textarea{
+    padding: 2.5em;
+    margin-bottom: 2em;
+}
+
+.footer{
+    background: #000;
+    color: #fff;
+}
+.footer h3{
+    color: rgb(23, 133, 184);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 1em 9em;
+}
+.footer img{
+    width: 70px;
+padding-left: 7em;
+}
+.link{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: #fff;
+    font-size: 1em;
+}
+.link h5{
+    font-size: 1.1em;
+}
+ 
+
+
+ @media screen and (max-width:760px){
+    .toggle{
+        display: flex;
+        top: 3.6rem;
+    }
+    .main{
+        flex-direction: column;
+        align-content: centre;
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        height: 100vh;
+        display: none;
+
+    }
+
+    .navbar ul{
+        flex-direction: column;
+    }
+    .text{
+        margin-top: 100px;
+        padding: 20px;
+    }
+    .text h1{
+          font-size: 2em;
+          margin-bottom: 30px;
+    }
+    .myimg, .myimg img{
+        display: none;
+    }
+    .logo{
+        color: aliceblue;
+        font-family: monospace;
+        font-size: 1rem;
+    }
+    .logo h4{
+        
+        font-weight: bolder;
+        font-size: 1.7em;
+    }
+    .project h4{
+        text-transform: uppercase;
+        font-size: 2.5em;
+        color: #000;
+        text-align: center;
+    }
+    .task,.task1{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 3em;
+
+    }
+    .task img, .task1 img{
+        width: 180px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .task1{
+        flex-direction: row-reverse;
+    }
+    .tasktex,.tasktex1{
+        margin-top: 2em;
+        padding: 1em;
+    }
+    .tasktex h2 span{
+        font-size: 1.4em;
+        color: rgb(23, 133, 184);
+        position: relative;
+        right: 2em;
+        font-weight: bolder;
+        
+       
+    }
+    .tasktex1 h2{ 
+        color: #000;
+        font-size: .8em;
+       text-transform: uppercase;
+       position: relative;
+       left: 5em;
+       line-height: 20px;
+    }
+    .tasktex a{
+       text-transform: uppercase;
+       margin-top: 0em;
+       font-size: .6em;
+        text-decoration: none;
+        color: #000;
+        position: relative;
+        left: 1em;
+    }
+    .tasktex i,.tasktex1 i{
+        width: 1em;
+        background-color: rgb(23, 133, 184);
+        height: 2.5px;
+        display: flex;
+        position: relative;
+        top: .8em;
+        right:.5em;
+        margin-right: .5em;
+    
+    }
+    .tasktex1 i{
+        left: 7.5em;
+    }
+    .tasktex1 a{
+        font-size: .6em;
+        text-decoration: none;
+        color: #000;
+        margin-top: 1em;
+        position: relative;
+        left:5em;
+        text-transform: uppercase;
+    }
+    .tasktex1 h2 span{
+        font-size: 1.4em;
+        color: rgb(23, 133, 184);
+        position: relative;
+        right: 1.4em;
+        font-weight: bolder;
+        margin-bottom: 2em;
+        
+       
+    }
+    .tasktex h2{ 
+        font-size: .8em;
+      line-height: 20px;
+       
+    }
+    
+    .skill{
+     flex-direction: column;
+    }
+    .work{
+        padding: 1em 7em 1em 7em;
+        
+    }
+    .work h5{
+        font-size: 1em;
+       
+    }
+    .work li{
+        list-style:outside;
+        padding-bottom: .7em;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+    .user h4{
+        font-size: 1.1em;
+        width: 400px;
+    }
+    .map{
+        display: none;
+    }
+   
+    .contact h3{
+        display: none;
+    }
+    .form h4{
+        color: rgb(23, 133, 184);
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .form{
+        margin: .2em;
+        height: 500px;
+        width: 400px;
+        background: #ecf0f3;
+        box-shadow: 14px 14px 20px #cbced1, 
+                   -14px -14px 20px white;
+    
+    }
+    .form button{
+        background: rgb(23, 133, 184);
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 10px 40px;
+        font-size: 1.5em;
+        text-transform: capitalize;
+        margin-left: 1em;
+        border-radius: 20px;
+    
+    }
+    .form input,.form textarea{
+        width: 80vw;
+       
+    }
+  
+    .footer h3{
+        color: rgb(23, 133, 184);
+        text-transform: uppercase;
+        font-size: 1.2em;
+        padding: 1em 9em;
+    }
+    .footer img{
+        width: 50px;
+    padding-left: 1em;
+    }
+    .link{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        color: #fff;
+        font-size: 1em;
+        flex-wrap: wrap;
+    }
+    .link h5{
+        font-size: 1.1em;
+    }
+    .form{
+        margin: 1em;
+        height: 500px;
+        width: 400;
+        background: #ecf0f3;
+        box-shadow: 14px 14px 20px #cbced1, 
+                   -14px -14px 20px white;
+    
+    }
+    .form button{
+        background: rgb(23, 133, 184);
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 10px 40px;
+        font-size: 1.5em;
+        text-transform: capitalize;
+        margin-left: 4em;
+        border-radius: 20px;
+    
+    }
+    .form input,.form textarea{
+        width: 70vw;
+        margin: 1.2em;
+        padding: .7em;
+        outline: none;
+        border: none;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    .form textarea{
+        padding: 2.5em;
+        margin-bottom: 2em;
+    }
+    
+    .footer{
+        background: #000;
+        color: #fff;
+    }
+    .footer h3{
+        color: rgb(23, 133, 184);
+        text-transform: uppercase;
+        font-size: 1.2em;
+        padding: 1em;
+    }
+    .footer img{
+        width: 70px;
+    padding-left: 1em;
+    }
+    .link{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        color: #fff;
+        font-size: 1em;
+    }
+    .link h5{
+        font-size: 1.1em;
+    }
+     
+}
